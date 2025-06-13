@@ -13,7 +13,7 @@ To run the front-end on your local machine, follow these steps:
 1. **Clone the repository:**
 
     ```
-    git clone https://github.com/victor891263/quizwiz.git .
+    git clone https://github.com/thalinhtet/quizwiz.git .
     cd client
     ```
 

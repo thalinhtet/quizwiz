@@ -42,4 +42,4 @@ If you found an issue or would like to submit an improvement to this project, pl
 
 ## Like the project?
 
-I'm currently studying for a master's degree in computer science at Manchester Metropolitan University and looking for a placement or a full-time role. If you have an opportunity, why not send me an email or send me a message via one of my social media accounts?
+I am currently residing in Manchester, UK, looking for a full-time full-stack development role, having recently graduated with a master's degree in computer science from Manchester Metropolitan University. If you have an opportunity, why not send me an email or send me a message on LinkedIn?

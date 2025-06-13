@@ -63,7 +63,7 @@ mongodb://localhost/<database_name>
 Clone the QuizWiz repository to your local machine:
 
 ```
-git clone https://github.com/victor891263/quizwiz .
+git clone https://github.com/thalinhtet/quizwiz .
 cd server
 ```
 

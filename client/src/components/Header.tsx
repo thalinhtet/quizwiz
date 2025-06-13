@@ -47,7 +47,7 @@ export default function Header() {
                                 )}
                             </div>
                             <div className='flex items-center space-x-4 sm:space-x-5'>
-                                <a href="https://github.com/victor891263/quizwiz" target="_blank" rel="noreferrer" ><GitHubIcon className={'h-5 w-5'} /></a>
+                                <a href="https://github.com/thalinhtet/quizwiz" target="_blank" rel="noreferrer" ><GitHubIcon className={'h-5 w-5'} /></a>
                                 <ThemeButton />
                                 <button onClick={() => setIsMenuOpen(!isMenuOpen)} className='sm:hidden !ml-3.5'>
                                     {isMenuOpen ? <CrossIcon className='h-[1.375rem] w-[1.375rem]' /> : <MenuIcon className='h-[1.375rem] w-[1.375rem]' />}

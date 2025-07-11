@@ -86,13 +86,18 @@ def get_test_with_questions_and_responses(id):
         # calculate how many questions each user answered correctly and add the result to each response
         if len(test_dict['responses']) > 0:
             for r in test_dict['responses']:
-                correctly_answered_questions = sum(
-                    1 for a in r['answers'] if any(
-                        o['is_correct'] for q in test_dict['questions'] if q['_id']["$oid"] == a["question_id"]["$oid"]
-                        for
-                        o in q['options']
-                    )
-                )
+                correctly_answered_questions = 0
+
+                for answer in r['answers']:
+                    # Get the matching question
+                    question = next(q for q in test_dict['questions'] if q['_id']['$oid'] == answer['question_id']['$oid'])
+
+                    # Find the correct option for the question
+                    correct_option = next(opt for opt in question['options'] if opt['is_correct'])
+
+                    if correct_option['_id']['$oid'] == answer['choice_id']['$oid']:
+                        correctly_answered_questions += 1
+
                 r['correctness'] = round((correctly_answered_questions / len(test_dict['questions'])) * 100)
 
     return jsonify(test_dict)

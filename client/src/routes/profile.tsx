@@ -140,7 +140,7 @@ export default function Profile() {
                                     )}
                                 </div>
                                 {profile.about ? (
-                                    <p className='mt-7'>{profile.about}</p>
+                                    <p className='mt-7 whitespace-break-spaces'>{profile.about}</p>
                                 ):(
                                     <p className='mt-7'>This user hasn't added an introduction yet.</p>
                                 )}

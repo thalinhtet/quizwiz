@@ -89,7 +89,6 @@ export default function Results() {
                             )
                         })}
                     </div>
-                    <div className='mt-12 text-sm text-slate-400'>The user completed the quiz in {quiz.responses[0].elapsed_time} minutes</div>
                     <div className='mb-14 pb-14 border-b'></div>
                     <h2 className='subtitle'>Comparison</h2>
                     <p className='mt-4'>The percentages represent the number of correct answers that each user picked.</p>

@@ -40,7 +40,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="border-t pt-5 mt-5 flex items-center justify-between">
-                    <p className="text-sm">© 2023 Victor</p>
+                    <p className="text-sm">© {new Date().getFullYear()} Victor</p>
                     <div className='flex items-center space-x-4'>
                         <ThemeButton className={'w-5 h-5'} />
                         <a href="https://github.com/thalinhtet/quizwiz" target="_blank" rel="noreferrer" className="block text-gray-600 dark:text-gray-300">

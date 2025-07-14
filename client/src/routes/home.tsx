@@ -157,7 +157,7 @@ export default function Home() {
                                     <CrossIcon className='h-3.5 w-3.5' />
                                 </button>
                             ))}
-                            <button onClick={() => setIsTagMenuOpen(!isTagMenuOpen)} className={'flex items-center space-x-1 text-sm p-1.5 pl-2.5 rounded-md text-sky-600 border border-sky-600 hover:bg-sky-50 ' + (isTagMenuOpen ? 'bg-sky-50' : '')}>
+                            <button onClick={() => setIsTagMenuOpen(!isTagMenuOpen)} className={'flex items-center space-x-1 text-sm p-1.5 pl-2.5 rounded-md text-sky-600 border border-sky-600 hover:bg-sky-50 dark:hover:bg-sky-900/50 ' + (isTagMenuOpen ? 'bg-sky-50' : '')}>
                                 <span>ADD TAG</span>
                                 <CrossIcon className='h-3 w-3 rotate-45' />
                             </button>

@@ -214,8 +214,12 @@ export default function EditProfile({ profile, updateDetails, updateNewEmail, cl
             setIsLoading(false)
             setSuccess('Your account has been deleted successfully. Logging you out now')
             setTimeout(() => setSuccess(''), 3000)
-            localStorage.removeItem('jwt') // logout
-            navigate('/') // redirect to home page
+
+            // logout
+            localStorage.removeItem('jwt')
+            sessionStorage.removeItem('jwt')
+
+            window.location.href = window.location.origin // redirect to home page
         }
         catch (error) {
             handleAxiosError(error, (msg: string) => {

@@ -117,14 +117,6 @@ root.render(
     <RouterProvider router={currentUser ? (currentUser.isVerified ? userRouter : unverifiedRouter) : guestRouter} />
 )
 
-// if the user has closed all tabs and if they didnt select "remember me" when they logged in, log them out
-sysend.track('close', data => {
-    if ((data.count === 0) && (!localStorage.getItem('rememberMe'))) {
-        localStorage.removeItem('jwt')
-        localStorage.removeItem('rememberMe')
-    }
-})
-
 // initialize dark mode
 initTheme()
 

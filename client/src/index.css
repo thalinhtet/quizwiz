@@ -157,7 +157,7 @@
 }
 
 .bg-sky-50 {
-    @apply dark:bg-sky-900/30
+    @apply dark:bg-sky-900/50
 }
 
 .divide-y, .divide-x {

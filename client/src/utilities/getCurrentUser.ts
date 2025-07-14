@@ -1,7 +1,7 @@
 import jwtDecode from "jwt-decode"
 
 export default function getCurrentUser() {
-    const token = localStorage.getItem('jwt')
+    const token = localStorage.getItem('jwt') || sessionStorage.getItem('jwt')
     if (token) return jwtDecode<{
         _id: string,
         isVerified: boolean,

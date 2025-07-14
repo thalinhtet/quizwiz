@@ -49,10 +49,8 @@ export default function Login() {
             // login
             axios.post(`${process.env.REACT_APP_API_URL}/auth`, { email, password })
                 .then(response => {
-                    localStorage.setItem('jwt', response.data)
-                    // save user's remember-me selection
-                    if (rememberMe) localStorage.setItem('rememberMe', 'yes')
-                    // navigate to home page
+                    if (rememberMe) localStorage.setItem('jwt', response.data)
+                    else sessionStorage.setItem('jwt', response.data)
                     window.location.href = window.location.origin
                 })
                 .catch(error => {

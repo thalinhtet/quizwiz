@@ -49,8 +49,7 @@ export default function Join() {
             axios.post(`${process.env.REACT_APP_API_URL}/users`, { username, email, password, created_on: new Date().getTime(), updated_on: new Date().getTime() })
                 .then(response => {
                     localStorage.setItem('jwt', response.data)
-                    localStorage.setItem('rememberMe', 'yes')
-                    window.location.href = `${window.location.origin}`
+                    window.location.href = window.location.origin
                 })
                 .catch(error => {
                     handleAxiosError(error, (msg: string) => {
